@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option go_package = "itau/demo";
+option java_multiple_files = true;
+option java_package = "com.itau.adapters.grpc.customers";
+
+package com.itau.adapters.grpc.customers;
+
+import "google/api/annotations.proto";
+
+
+service TaskService {
+  rpc Create(CreateTaskRequest) returns(TaskBody){
+    option (google.api.http) = {
+      post: "/task"
+      body: "*"
+    };
+  };
+  rpc FindById(TaskIdRequest) returns(TaskBody){
+    option (google.api.http) = {
+      get: "/task/{id}"
+    };
+  };
+}
+
+message TaskIdRequest{
+  string id = 1;
+}
+
+message CreateTaskRequest{
+  string title = 2;
+  int32 status = 3;
+  int64 userId = 4;
+}
+
+message TaskBody{
+  string id = 1;
+  string title = 2;
+  int32 status = 3;
+  int64 userId = 4;
+}
