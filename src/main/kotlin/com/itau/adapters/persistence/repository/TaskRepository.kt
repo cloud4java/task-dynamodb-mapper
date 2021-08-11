@@ -1,4 +1,4 @@
-package com.itau.adapters.persistence.repositories
+package com.itau.adapters.persistence.repositories.com.itau.adapters.persistence.repository
 
 import com.itau.*
 import com.itau.adapters.grpc.customers.CreateTaskRequest

@@ -1,4 +1,4 @@
-package com.itau.adapters.persistence.repositories
+package com.itau.adapters.persistence.repositories.com.itau.adapters.persistence.repository
 
 import com.amazonaws.client.builder.AwsClientBuilder
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB

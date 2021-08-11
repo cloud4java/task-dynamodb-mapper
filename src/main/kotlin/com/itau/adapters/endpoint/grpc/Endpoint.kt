@@ -4,7 +4,7 @@ import com.itau.adapters.grpc.customers.CreateTaskRequest
 import com.itau.adapters.grpc.customers.TaskBody
 import com.itau.adapters.grpc.customers.TaskIdRequest
 import com.itau.adapters.grpc.customers.TaskServiceGrpc
-import com.itau.adapters.persistence.repositories.TaskRepository
+import com.itau.adapters.persistence.repositories.com.itau.adapters.persistence.repository.TaskRepository
 import io.grpc.Status
 import io.grpc.stub.StreamObserver
 import javax.inject.Singleton
